@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App Pro</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- TÍTULO -->
+        <h1>To-Do App Pro</h1>
+
+        <!-- CONTADOR -->
+        <p id="contador"></p>
+
+        <!-- INPUT -->
+        <div class="input-group">
+            <input type="text" id="tarea" placeholder="Escribe una tarea">
+            <button onclick="agregarTarea()">Agregar</button>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filtros">
+            <button onclick="filtrar('todas')">Todas</button>
+            <button onclick="filtrar('pendientes')">Pendientes</button>
+            <button onclick="filtrar('completadas')">Completadas</button>
+        </div>
+
+        <!-- LISTA DE TAREAS -->
+        <ul id="lista"></ul>
+
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

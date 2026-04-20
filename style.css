@@ -1,0 +1,240 @@
+/* ==============================
+   CONTENEDOR GENERAL
+============================== */
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* ==============================
+   TARJETA PRINCIPAL
+============================== */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: #1f2235;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ==============================
+   TÍTULO
+============================== */
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   CONTADOR
+============================== */
+
+#contador {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+/* ==============================
+   INPUT + BOTÓN AGREGAR
+============================== */
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-group button {
+    background-color: #7c6cff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s;
+}
+
+.input-group button:hover {
+    background-color: #5b4de0;
+}
+
+/* ==============================
+   FILTROS
+============================== */
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filtros button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #444;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtros button:hover {
+    border-color: #7c6cff;
+}
+
+/* ==============================
+   LISTA
+============================== */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ==============================
+   ITEM
+============================== */
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2d45;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+span {
+    font-size: 16px;
+}
+
+/* ==============================
+   CONTENEDOR BOTONES
+============================== */
+
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+/* ==============================
+   BOTÓN EDITAR
+============================== */
+
+.btn-editar {
+    background-color: transparent;
+    color: #4fc3f7;
+    border: 1px solid #4fc3f7;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-editar:hover {
+    background-color: #4fc3f7;
+    color: #0f172a;
+}
+
+/* ==============================
+   BOTÓN ELIMINAR
+============================== */
+
+.btn-eliminar {
+    background-color: transparent;
+    color: #ff5252;
+    border: 1px solid #ff5252;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-eliminar:hover {
+    background-color: #ff5252;
+    color: white;
+}
+
+/* ==============================
+   INPUT DE EDICIÓN (PRO)
+============================== */
+
+li input {
+    flex: 1;
+    margin-right: 15px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #4fc3f7;
+    background-color: #1f2235;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+li input:focus {
+    border-color: #7c6cff;
+    box-shadow: 0 0 5px #7c6cff;
+}
+
+/* ==============================
+   ESTADO VACÍO
+============================== */
+
+.vacio {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* ==============================
+   ANIMACIONES
+============================== */
+
+.fade-in {
+    animation: aparecer 0.3s ease;
+}
+
+.fade-out {
+    animation: desaparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
